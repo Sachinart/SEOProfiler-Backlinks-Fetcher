@@ -1,4 +1,4 @@
-# SEOProfiler-Backlinks-Fetcher
+# SEOProfiler Backlinks Fetcher
 
 This tool serve the purpose to fetch backlinks from SEOProfiler website.
 

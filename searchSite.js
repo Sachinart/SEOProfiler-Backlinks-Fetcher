@@ -72,6 +72,8 @@ const searchSite = async (w) => {
 		const msg = "<p>The website "+ w +" is a special case domain. It is one of the most linked domains on the Internet. A very high percentage of all websites on the Internet link to linkedin.com</p><ul><li>The website linkedin.com is not a typical website with a typical link structure.</li><li>For that reason, it does not make sense to analyze the links that point to linkedin.com.</li><li>Analyzing the links of linkedin.com can easily lead to the wrong conclusions because there are all types of links that point to that website.</li><li>The very high number of links that point to linkedin.com and the popularity of linkedin.com is the reason why that website has good rankings.</li></ul><p>Analyzing the links of a special case website like this is a waste of your time. Focus on your direct competitors to improve the links that point to your own site.</p>";
 		
 		result.push({"msg":msg,"data":""});
+		
+		await browser.close();
 		// return the data back
 		return result;
 	}

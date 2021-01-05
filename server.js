@@ -27,7 +27,7 @@ app.get('/backlinks', (request, response) => {
 });
 
 //Catches requests made to localhost:3003/
-app.get('/', (req, res) => res.send('Hello World!'));
+app.get('/', (req, res) => res.send('So, it is working perfectly!'));
 
 
 //Initialises the express server on the port 300

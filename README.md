@@ -1,6 +1,6 @@
 # SEOProfiler Backlinks Fetcher
 
-This tool serve the purpose to fetch backlinks from SEOProfiler website.
+This tool serve the purpose to fetch backlinks from SEOProfiler website. It use Puppeteer library of Node JS to login to your SEOProfiler account and scrap top 100 backlinks from the first page.
 
 ## How to run?
 

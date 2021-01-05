@@ -10,7 +10,7 @@ const searchSite = async (w) => {
 	// set user agent (override the default headless User Agent)
     await page.setUserAgent(fakeUa());
 
-    await page.goto('https://www.seoprofiler.com/lp/links?pid=2f37be78d350cc37&q='+ w + '&num=100');
+    await page.goto('https://www.seoprofiler.com/lp/links?pid={YOUR PID HERE}&q='+ w + '&num=100');
 
 	// get the User Agent on the context of Puppeteer
 	//const userAgent = await page.evaluate(() => navigator.userAgent );
@@ -19,8 +19,8 @@ const searchSite = async (w) => {
 	//console.log(userAgent);
 	
     //Finds input elements to enter username and password
-    await page.type('input[name="username"]', 'xurihyb@inboxbear.com');
-    await page.type('input[name="password"]', 'Sachin@8720');
+    await page.type('input[name="username"]', '{YOUR USERNAME OR EMAIL ADDRESS}');
+    await page.type('input[name="password"]', '{YOUR PASSWORD}');
 	
     //Finds an button to submit the form, after so it executes .click() DOM Method
     await page.$eval('button[name="button"]', button => button.click());

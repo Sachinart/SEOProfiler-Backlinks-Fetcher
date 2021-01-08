@@ -8,5 +8,6 @@ This tool serve the purpose to fetch backlinks from SEOProfiler website. It use 
 - Go to Backlinks from the left sidebar menu under Analyze Links
 - Copy the pid from the URL and paste in line 13 in file searchSite.js
 - Change username and password in line 22 and 23 in file searchSite.js
-- Run the app in port 3003. You can change port in line 5 in file server.js
+- Install dependencies with command - npm install puppeteer cheerio fake-useragent fs
+- Run the app in port 3003 with command - npm start. You can change port in line 5 in file server.js
 - Use ServerURL followed by /backlinks?w={WEBSITE FOR WHICH BACKLINKS ARE TO BE FETCHED} eg. localhost:3000/backlinks?w=seocms.in

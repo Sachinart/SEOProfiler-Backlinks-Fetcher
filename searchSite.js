@@ -4,7 +4,7 @@ const fakeUa = require('fake-useragent');
 const fs = require('fs');
 
 const searchSite = async (w) => {
-    const browser = await puppeteer.launch();
+    const browser = await puppeteer.launch({args: ['--no-sandbox']}); // using no sandbox to run it in server
 
     const page = await browser.newPage();
 	
